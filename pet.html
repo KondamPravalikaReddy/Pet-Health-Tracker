@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Health Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Pet Health Tracker</h1>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">Health Tracker</a>
+                <a href="#">Medications</a>
+                <a href="#">Appointments</a>
+                <a href="#">Settings</a>
+            </nav>
+        </header>
+
+        <main>
+            <section class="pet-info">
+                <h2>Pet Information</h2>
+                <input type="text" id="pet-name" placeholder="Name" />
+                <input type="number" id="pet-age" placeholder="Age" />
+                <input type="text" id="pet-breed" placeholder="Breed" />
+                <input type="number" id="pet-weight" placeholder="Weight (kg)" />
+                <input type="number" id="pet-height" placeholder="Height (cm)" />
+                <button onclick="savePetInfo()">Save</button>
+            </section>
+
+            <section class="health-tracker">
+                <h2>Health Tracker</h2>
+                <input type="number" id="temperature" placeholder="Temperature (°C)" />
+                <input type="number" id="pulse" placeholder="Pulse (bpm)" />
+                <input type="number" id="respiratory-rate" placeholder="Respiratory Rate (breaths/min)" />
+                <input type="text" id="vaccination-status" placeholder="Vaccination Status" />
+                <button onclick="updateHealthInfo()">Update</button>
+            </section>
+
+            <section class="medications">
+                <h2>Medications</h2>
+                <div id="medications-list">
+                    <input type="text" placeholder="Medication Name" />
+                    <input type="text" placeholder="Dosage" />
+                    <input type="text" placeholder="Frequency" />
+                </div>
+                <button onclick="addMedication()">Add Medication</button>
+            </section>
+
+            <section class="appointments">
+                <h2>Appointments</h2>
+                <div id="appointments-list">
+                    <input type="date" placeholder="Date" />
+                    <input type="time" placeholder="Time" />
+                    <input type="text" placeholder="Appointment Type" />
+                </div>
+                <button onclick="addAppointment()">Add Appointment</button>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Pet Health Tracker</p>
+            
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
